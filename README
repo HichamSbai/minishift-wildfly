@@ -1,0 +1,1 @@
+oc export all -o json -l app=mywildfly --as-template=mywildfly-template > /d/Eclipse/java-neon/workspace/mywildfly/mywildfly-template.json
