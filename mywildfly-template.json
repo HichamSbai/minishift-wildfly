@@ -2,10 +2,10 @@
 	"kind": "Template",
 	"apiVersion": "v1",
 	"metadata": {
-		"name": "mywildfly-template",
-		"labels": {
-			"app": "mywildfly"
-		}
+		"name": "mywildfly-template"
+	},
+	"labels": {
+		"app": "mywildfly"
 	},
 	"objects": [
 		{

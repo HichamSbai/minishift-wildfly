@@ -24,7 +24,7 @@ public class MytableEndpoint {
 	@Produces("application/json")
 	public List<Mytable> listAll(@QueryParam("start") Integer startPosition, @QueryParam("max") Integer maxResult) {
 		ResteasyClient client = new ResteasyClientBuilder().build();
-		ResteasyWebTarget target = client.target("http://mywildflyjpa:8080/rest/mytables");
+		ResteasyWebTarget target = client.target("http://wildflyjpa:8080/rest/mytables");
 		Response response = target.request().get();
 		List<Mytable> responseEntityList = response.readEntity(new GenericType<List<Mytable>>() {
 		});
